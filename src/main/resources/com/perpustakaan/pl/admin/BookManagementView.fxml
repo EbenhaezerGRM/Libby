@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.perpustakaan.pl.admin.BookManagementController">
+   <top>
+      <HBox alignment="CENTER_LEFT" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="header-label" text="Manajemen Buku" />
+            <Button mnemonicParsing="false" onAction="#handleAddBook" styleClass="button-success" text="+ Tambah Buku Baru" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="bookTable" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="titleColumn" prefWidth="250.0" text="Judul" />
+            <TableColumn fx:id="authorColumn" prefWidth="150.0" text="Penulis" />
+            <TableColumn fx:id="categoryColumn" prefWidth="100.0" text="Kategori" />
+            <TableColumn fx:id="totalStockColumn" prefWidth="75.0" text="Total Stok" />
+            <TableColumn fx:id="availableStockColumn" prefWidth="100.0" text="Stok Tersedia" />
+         </columns>
+      </TableView>
+   </center>
+   <right>
+      <VBox alignment="TOP_CENTER" prefWidth="200.0" spacing="10.0" style="-fx-border-color: #dee2e6; -fx-border-width: 0 0 0 1; -fx-background-color: #f8f9fa;">
+         <children>
+            <Label text="Aksi Cepat">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="editButton" disable="true" mnemonicParsing="false" onAction="#handleEditBook" prefWidth="150.0" text="Edit Buku Terpilih" />
+            <Button fx:id="deleteButton" disable="true" mnemonicParsing="false" onAction="#handleDeleteBook" prefWidth="150.0" styleClass="button-danger" text="Hapus Buku Terpilih" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>

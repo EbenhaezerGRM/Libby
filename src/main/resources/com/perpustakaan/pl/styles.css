@@ -1,0 +1,47 @@
+.button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.button-success {
+    -fx-background-color: #28a745;
+}
+.button-success:hover {
+    -fx-background-color: #1e7e34;
+}
+
+.button-danger {
+    -fx-background-color: #dc3545;
+}
+.button-danger:hover {
+    -fx-background-color: #c82333;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-alignment: center-left;
+    -fx-padding: 10 15;
+}
+
+.nav-button:hover {
+    -fx-background-color: #e9ecef;
+}
+
+.header-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.table-view .column-header {
+    -fx-background-color: #f1f3f5;
+    -fx-font-weight: bold;
+}
