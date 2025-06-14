@@ -105,6 +105,8 @@ public class SQLiteConnector implements DatabaseConnector {
                 stmt.execute("INSERT INTO users (username, password, role) VALUES ('admin', '" + PasswordUtil.hashPassword("admin123") + "', 'ADMIN');");
                 stmt.execute("INSERT INTO users (username, password, role) VALUES ('ebenhaezer', '" + PasswordUtil.hashPassword("ebenhaezer123") + "', 'ADMIN');");
                 stmt.execute("INSERT INTO users (username, password, role) VALUES ('wening', '" + PasswordUtil.hashPassword("wening123") + "', 'ADMIN');");
+                stmt.execute("INSERT INTO users (username, password, role) VALUES ('revan', '" + PasswordUtil.hashPassword("revan123") + "', 'USER');");
+                stmt.execute("INSERT INTO users (username, password, role) VALUES ('farrel', '" + PasswordUtil.hashPassword("farrel123") + "', 'USER');");
             }
         }
         
